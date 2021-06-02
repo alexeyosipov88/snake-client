@@ -9,10 +9,10 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    console.log("Connected to the server")
+    console.log("Successfully connected to game server");
+    conn.write('Name: OAO');
   });
   conn.setEncoding("utf8");
-
   return conn;
 };
 
