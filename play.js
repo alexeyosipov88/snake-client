@@ -1,6 +1,8 @@
 const net = require("net");
 const connect = require("../snake-client/client")
+const setupInput  = require("../snake-client/input");
 
-// establishes a connection with the game server
 console.log("Connecting ...");
 connect();
+
+setupInput();
